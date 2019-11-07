@@ -15,6 +15,11 @@ main > div:first-child img, #secundaria figure img {
 #secundaria {
 	background: #d5c75f;
 	border: 1px solid black;
+	display: flex;
+}
+
+#secundaria > div {
+	margin: auto;
 }
 
 #secundaria figure {
@@ -51,7 +56,7 @@ main > div:first-child img, #secundaria figure img {
 	}
 	
 	#secundaria > div figure img {
-		margin: 0;
+		width: 80%;
 	}
 	
 	#secundaria > div figure:first-child {

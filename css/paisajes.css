@@ -2,31 +2,34 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 20px;
+	padding: 20px 0;
+	background: #d5c75f;
 }
 
-main img {
+main picture {
 	margin-bottom: 20px;
 }
 
-main img:nth-child(1) {
+main picture:nth-child(1) {
 	filter: blur(10px);
 }
 
-main img:nth-child(3) {
+main picture:nth-child(3) {
 	filter: sepia(90%);
 }
 
-main img:nth-child(even) {
+main picture:nth-child(even) {
 	filter: grayscale(100%);
+}
+
+main picture:last-child {
+	margin-bottom: 0;
 }
 
 @media ( min-width: 900px ) {
 	main {
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-around;
-		background: #d5c75f;
+		display: block;
+		text-align: center;
 	}
 	
 	main img {
