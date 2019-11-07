@@ -1,0 +1,60 @@
+main > div:first-child {
+	background: #82c3a6;
+}
+
+main > div:first-child picture {
+	padding: 20px 0;
+	display: block;
+}
+
+main > div:first-child img, #secundaria figure img {
+	display: block;
+	margin: auto;
+}
+
+#secundaria {
+	background: #d5c75f;
+	border: 1px solid black;
+}
+
+#secundaria figure {
+	margin-bottom: 20px;
+}
+
+#secundaria figure:first-child {
+	margin-top: 20px;
+}
+
+#secundaria figure:first-child a img:hover {
+	transform: rotate(10deg);
+}
+
+#secundaria figure:last-child a img:hover {
+	transform: translate(20px, -5px);
+}
+
+#secundaria figcaption {
+	text-align: center;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+@media ( min-width: 900px ) {
+	#secundaria > div {
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+	}
+	
+	#secundaria > div figure {
+		margin-bottom: 0;
+	}
+	
+	#secundaria > div figure img {
+		margin: 0;
+	}
+	
+	#secundaria > div figure:first-child {
+		margin-right: 20px;
+	}
+}
